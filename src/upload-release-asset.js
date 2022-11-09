@@ -34,6 +34,8 @@ async function run() {
       data: { id: id, browser_download_url: browserDownloadUrl }
     } = uploadAssetResponse;
 
+    console.log("output is", uploadAssetResponse);
+
     // Set the output variable for use by other actions: https://github.com/actions/toolkit/tree/master/packages/core#inputsoutputs
     core.setOutput('id', id);
     core.setOutput('browser_download_url', browserDownloadUrl);
