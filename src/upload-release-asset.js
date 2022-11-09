@@ -31,8 +31,7 @@ async function run() {
 
     // Get the id and browser_download_url for the uploaded release asset from the response
     const {
-      data: { id },
-      data: { browser_download_url: browserDownloadUrl }
+      data: { id: id, browser_download_url: browserDownloadUrl }
     } = uploadAssetResponse;
 
     // Set the output variable for use by other actions: https://github.com/actions/toolkit/tree/master/packages/core#inputsoutputs
